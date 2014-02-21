@@ -1,0 +1,507 @@
+{
+  "name": "NYC",
+  "children": [
+    {
+     "name": "boroughs",
+     "children": [
+      {
+        "name": "manhattan",
+        "children": [
+          {
+            "district": "1",
+            "children": [
+              {"refuse": "1241.24"},
+              {"paper": "420.95"},
+              {"mgp": "216.91"}
+            ]
+          },
+          {
+            "district": "2",
+            "children": [
+              {"refuse": "2245.23"},
+              {"paper": "500.94"},
+              {"mgp": "269.77"}
+            ]
+          },
+          {
+            "district": "3",
+            "children": [
+              {"refuse": "3178.24"},
+              {"paper": "388.52"},
+              {"mgp": "257.06"}
+            ]
+          },
+          {
+            "district": "4",
+            "children": [
+              {"refuse": "2279.71"},
+              {"paper": "517.98"},
+              {"mgp": "335.69"}
+            ]
+          },
+                    {
+            "district": "5",
+            "children": [
+              {"refuse": "1348.82"},
+              {"paper": "278.28"},
+              {"mgp": "152.43"}
+            ]
+          },
+          {
+            "district": "6",
+            "children": [
+              {"refuse": "3117.88"},
+              {"paper": "628.98"},
+              {"mgp": "385.61"}
+            ]
+          },
+          {
+            "district": "7",
+            "children": [
+              {"refuse": "5461.86"},
+              {"paper": "1232.56"},
+              {"mgp": "617.15"}
+            ]
+          },
+          {
+            "district": "8",
+            "children": [
+              {"refuse": "5904.28"},
+              {"paper": "1225.57"},
+              {"mgp": "643.79"}
+            ]
+          },
+          {
+            "district": "9",
+            "children": [
+              {"refuse": "2717.01"},
+              {"paper": "291.66"},
+              {"mgp": "190.29"}
+            ]
+          },
+          {
+            "district": "10",
+            "children": [
+              {"refuse": "2962.33"},
+              {"paper": "224.69"},
+              {"mgp": "156.22"}
+            ]
+          },
+          {
+            "district": "11",
+            "children": [
+              {"refuse": "2329.99"},
+              {"paper": "180.59"},
+              {"mgp": "110.67"}
+            ]
+          },
+          {
+            "district": "12",
+            "children": [
+              {"refuse": "5281.14"},
+              {"paper": "434.96"},
+              {"mgp": "380.6"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brooklyn",
+        "children": [
+          {
+            "district": "1",
+            "children": [
+              {"refuse": "4819.68"},
+              {"paper": "535.61"},
+              {"mgp": "372.21"}
+            ]
+          },
+          {
+            "district": "2",
+            "children": [
+              {"refuse": "2356.85"},
+              {"paper": "472.87"},
+              {"mgp": "288.6"}
+            ]
+          },
+          {
+            "district": "3",
+            "children": [
+              {"refuse": "4323.49"},
+              {"paper": "253.98"},
+              {"mgp": "217.42"}
+            ]
+          },
+          {
+            "district": "4",
+            "children": [
+              {"refuse": "3405.96"},
+              {"paper": "192.22"},
+              {"mgp": "231.87"}
+            ]
+          },
+          {
+            "district": "5",
+            "children": [
+              {"refuse": "4610.77"},
+              {"paper": "242.86"},
+              {"mgp": "282.65"}
+            ]
+          },
+          {
+            "district": "6",
+            "children": [
+              {"refuse": "2444.26"},
+              {"paper": "635.78"},
+              {"mgp": "377.47"}
+            ]
+          },
+          {
+            "district": "7",
+            "children": [
+              {"refuse": "3490.23"},
+              {"paper": "439.06"},
+              {"mgp": "307.33"}
+            ]
+          },
+          {
+            "district": "8",
+            "children": [
+              {"refuse": "2880.5"},
+              {"paper": "237.52"},
+              {"mgp": "194.48"}
+            ]
+          },
+          {
+            "district": "9",
+            "children": [
+              {"refuse": "3310.09"},
+              {"paper": "239.63"},
+              {"mgp": "163.42"}
+            ]
+          },
+          {
+            "district": "10",
+            "children": [
+              {"refuse": "3523.83"},
+              {"paper": "577.12"},
+              {"mgp": "321.65"}
+            ]
+          },
+          {
+            "district": "11",
+            "children": [
+              {"refuse": "4984.23"},
+              {"paper": "698.25"},
+              {"mgp": "388.23"}
+            ]
+          },
+          {
+            "district": "12",
+            "children": [
+              {"refuse": "6184.15"},
+              {"paper": "767.46"},
+              {"mgp": "326.95"}
+            ]
+          },
+          {
+            "district": "13",
+            "children": [
+              {"refuse": "2292.82"},
+              {"paper": "190.11"},
+              {"mgp": "165.43"}
+            ]
+          },
+          {
+            "district": "14",
+            "children": [
+              {"refuse": "5004.17"},
+              {"paper": "477.62"},
+              {"mgp": "280.94"}
+            ]
+          },
+          {
+            "district": "15",
+            "children": [
+              {"refuse": "4790.5"},
+              {"paper": "704.89"},
+              {"mgp": "388.61"}
+            ]
+          },
+          {
+            "district": "16",
+            "children": [
+              {"refuse": "1998.63"},
+              {"paper": "102.8"},
+              {"mgp": "104.87"}
+            ]
+          },
+          {
+            "district": "17",
+            "children": [
+              {"refuse": "4672.69"},
+              {"paper": "323.77"},
+              {"mgp": "341.74"}
+            ]
+          },
+          {
+            "district": "18",
+            "children": [
+              {"refuse": "5975.13"},
+              {"paper": "653.01"},
+              {"mgp": "480.11"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "bronx",
+        "children": [
+          {
+            "district": "1",
+            "children": [
+              {"refuse": "2052.58"},
+              {"paper": "91.27"},
+              {"mgp": "76.03"}
+            ]
+          },
+          {
+            "district": "2",
+            "children": [
+              {"refuse": "1664.38"},
+              {"paper": "82.04"},
+              {"mgp": "97.48"}
+            ]
+          },
+                    {
+            "district": "3",
+            "children": [
+              {"refuse": "1917.67"},
+              {"paper": "80.88"},
+              {"mgp": "78.65"}
+            ]
+          },
+          {
+            "district": "4",
+            "children": [
+              {"refuse": "4588.12"},
+              {"paper": "169.44"},
+              {"mgp": "167.9"}
+            ]
+          },
+                    {
+            "district": "5",
+            "children": [
+              {"refuse": "3735.12"},
+              {"paper": "164.09"},
+              {"mgp": "207.24"}
+            ]
+          },
+          {
+            "district": "6",
+            "children": [
+              {"refuse": "2328.64"},
+              {"paper": "95.04"},
+              {"mgp": "112.25"}
+            ]
+          },
+                    {
+            "district": "7",
+            "children": [
+              {"refuse": "3926.07"},
+              {"paper": "237.94"},
+              {"mgp": "244.82"}
+            ]
+          },
+          {
+            "district": "8",
+            "children": [
+              {"refuse": "2651.04"},
+              {"paper": "351.2"},
+              {"mgp": "237.54"}
+            ]
+          },
+                    {
+            "district": "9",
+            "children": [
+              {"refuse": "4510.04"},
+              {"paper": "351.2"},
+              {"mgp": "235.91"}
+            ]
+          },
+          {
+            "district": "10",
+            "children": [
+              {"refuse": "2860.96"},
+              {"paper": "378.97"},
+              {"mgp": "274.43"}
+            ]
+          },
+                    {
+            "district": "11",
+            "children": [
+              {"refuse": "3307.65"},
+              {"paper": "333.6"},
+              {"mgp": "251.35"}
+            ]
+          },
+          {
+            "district": "12",
+            "children": [
+              {"refuse": "4185.39"},
+              {"paper": "390.3"},
+              {"mgp": "404.84"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "queens",
+        "children": [
+          {
+            "district": "1",
+            "children": [
+              {"refuse": "4303.89"},
+              {"paper": "584.42"},
+              {"mgp": "439.02"}
+            ]
+          },
+          {
+            "district": "2",
+            "children": [
+              {"refuse": "2813.21"},
+              {"paper": "376.24"},
+              {"mgp": "268.12"}
+            ]
+          },
+                    {
+            "district": "3",
+            "children": [
+              {"refuse": "5020.36"},
+              {"paper": "414.94"},
+              {"mgp": "377.62"}
+            ]
+          },
+          {
+            "district": "4",
+            "children": [
+              {"refuse": "4496.98"},
+              {"paper": "375.58"},
+              {"mgp": "287.04"}
+            ]
+          },
+                    {
+            "district": "5",
+            "children": [
+              {"refuse": "5172"},
+              {"paper": "724.31"},
+              {"mgp": "537.01"}
+            ]
+          },
+          {
+            "district": "6",
+            "children": [
+              {"refuse": "2991.34"},
+              {"paper": "463.59"},
+              {"mgp": "276.91"}
+            ]
+          },
+                    {
+            "district": "7",
+            "children": [
+              {"refuse": "6868.46"},
+              {"paper": "929.72"},
+              {"mgp": "542.06"}
+            ]
+          },
+          {
+            "district": "8",
+            "children": [
+              {"refuse": "3930.76"},
+              {"paper": "546.35"},
+              {"mgp": "333.45"}
+            ]
+          },
+                    {
+            "district": "9",
+            "children": [
+              {"refuse": "4303.94"},
+              {"paper": "448.43"},
+              {"mgp": "367.94"}
+            ]
+          },
+          {
+            "district": "10",
+            "children": [
+              {"refuse": "4251.46"},
+              {"paper": "448.11"},
+              {"mgp": "373.9"}
+            ]
+          },
+                    {
+            "district": "11",
+            "children": [
+              {"refuse": "4251.46"},
+              {"paper": "566.36"},
+              {"mgp": "325.09"}
+            ]
+          },
+          {
+            "district": "12",
+            "children": [
+              {"refuse": "7201.87"},
+              {"paper": "505.05"},
+              {"mgp": "583.34"}
+            ]
+          },
+          {
+            "district": "13",
+            "children": [
+              {"refuse": "5881.85"},
+              {"paper": "593.86"},
+              {"mgp": "566.46"}
+            ]
+          },
+          {
+            "district": "14",
+            "children": [
+              {"refuse": "3758.73"},
+              {"paper": "272.92"},
+              {"mgp": "205.08"}
+            ]
+          },
+        ]
+      },
+      {
+        "name": "staten_island",
+        "children": [
+          {
+            "district": "1",
+            "children": [
+              {"refuse": "6305.43"},
+              {"paper": "723.06"},
+              {"mgp": "530.55"}
+            ]
+          },
+          {
+            "district": "2",
+            "children": [
+              {"refuse": "5155.77"},
+              {"paper": "678.55"},
+              {"mgp": "455.27"}
+            ]
+          },
+          {
+            "district": "3",
+            "children": [
+              {"refuse": "6424.57"},
+              {"paper": "933.83"},
+              {"mgp": "604.76"}
+            ]
+          },
+        ]
+      }
+     ] 
+    }
+  ]
+}
