@@ -5,26 +5,96 @@
 
     var color = d3.scale.category20c();
 
-    var treemap = d3.layout.treemap()
-    .size([width, height])
-    .sticky(true)
-    .value(function(d) { console.log(d); return d.size; });
+    var treemap = function(){ return d3.layout.treemap()
+      .size([width, height])
+      .sticky(true)
+      .value(function(d) { return d.size; })
+    }
 
     var div = d3.select("body").append("div")
-    .style("position", "relative")
-    .style("width", (width + margin.left + margin.right) + "px")
-    .style("height", (height + margin.top + margin.bottom) + "px")
-    .style("left", margin.left + "px")
-    .style("top", margin.top + "px");
+      .style("position", "relative")
+      .style("width", (width + margin.left + margin.right) + "px")
+      .style("height", (height + margin.top + margin.bottom) + "px")
+      .style("left", margin.left + "px")
+      .style("top", margin.top + "px");
+
+    var node;
 
     function render(root){
-      var node = div.datum(root).selectAll(".node")
-      .data(treemap.nodes)
-      .enter().append("div")
-      .attr("class", "node")
-      .call(position)
-      .style("background", function(d) { return d.children ? color(d.name) : null; })
-      .text(function(d) { return d.children ? null : d.name; });
+      console.log(root);
+      node = div.datum(root).selectAll(".node")
+        .data(treemap().nodes)
+      node
+        .enter().append("div")
+        .attr("class", "node")
+      node
+        .call(position)
+        .style("background", function(d) { return d.children ? color(d.name) : null; })
+        .text(function(d) { return d.children ? null : d.name; })
+      node.exit().transition().remove();  
+      d3.selectAll("input").on("change", function change() {
+
+        boroughs = {
+          "Brooklyn": 1,
+          "Manhattan": 0,
+        }
+        var data = root[boroughs[this.value]]
+          ? function() { return 1 }
+          : function(d) { 
+            console.log(d);
+            return d.size; };
+
+        node 
+          .data(treemap().value(value).nodes)
+          .transition()
+          .duration(2000)
+          .call(position);
+
+        console.log("ASDFASDF");
+      });    
+    }
+
+
+    d3.selectAll("input").on("change", function change() {
+
+        var value = this.value === "Manhattan"
+          ? function() { return 1; }
+          : function(d) { return d.size; };
+
+        node 
+          .data(treemap.value(value).nodes)
+          .transition()
+          .duration(2000)
+          .call(position);
+
+        console.log("ASDFASDF");
+        //var value = determineBorough(root, this.value) 
+
+
+
+        // var value = this.value === "Manhattan"
+        //   // ? render(nyc.children[2])
+        //   // : render(nyc);
+        //   ? function(d) { return d.size; }
+        //   : function(d) { return d.size; };
+
+        // node
+        //   .data(treemap.value(value).nodes)
+        //   .transition()
+        //   .duration(1500)
+        //   .call(position);
+      });
+
+
+    function determineBorough(root, value) {
+      if (value === "Manhattan") {
+        console.log("manhattan");
+        return function() { return root.children[0].size; }
+      }
+      else {
+        console.log("return some other borugh");
+        return root;
+      }
     }
 
     function position() {
