@@ -6,23 +6,25 @@
   <style>
     .node {
       border: solid 1px white;
-      font: 12px sans-serif;
-      line-height: 14px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 14px
       overflow: hidden;
       position: absolute;
       text-indent: 2px;
     }
   </style>
-  <title>Garbage Collection by Neighborhood</title>
+
+  <title>NYC Garbage Collection</title>
 </head>
 <body>
   <form>
-    <label><input type="radio" name="mode" value="Manhattan" checked>Manhattan</label>
+    <label><input type="radio" name="mode" value="All" checked>All</label>
+    <label><input type="radio" name="mode" value="Manhattan">Manhattan</label>
     <label><input type="radio" name="mode" value="Brooklyn">Brooklyn</label>
     <label><input type="radio" name="mode" value="Queens">Queens</label>
     <label><input type="radio" name="mode" value="Bronx">Bronx</label>
     <label><input type="radio" name="mode" value="Staten Island">Staten Island</label>
-    <label><input type="radio" name="mode" value="All">All</label>
   </form>
 
   <script src="http://d3js.org/d3.v3.min.js"></script>

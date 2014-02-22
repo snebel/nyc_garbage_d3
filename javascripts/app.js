@@ -1,15 +1,16 @@
 //rendering
   var margin = {top: 40, right: 10, bottom: 10, left: 10},
-  width = 960 - margin.left - margin.right,
+  width = 800 - margin.left - margin.right,
   height = 500 - margin.top - margin.bottom,
   color = d3.scale.category20c();
 
   var div = d3.select("body").append("div")
+
     .style("position", "relative")
     .style("width", (width + margin.left + margin.right) + "px")
     .style("height", (height + margin.top + margin.bottom) + "px")
     .style("left", margin.left + "px")
-    .style("top", margin.top + "px");
+    .style("top", margin.top + "px")
 
   var treemap = function(){ 
     return d3.layout.treemap()
@@ -28,21 +29,11 @@
       .transition().duration(2000)
       .call(position)
       .style("background", function(d) { return d.children ? color(d.name) : null; })
+      
       .text(function(d) { return d.children ? null : d.name; })
     
     node.exit().remove();  
   }
-
-  d3.selectAll("input").on("change", function change() {
-    var i = 0;
-    if (this.value === "Brooklyn") {i = 0}
-    else if (this.value === "Queens") {i = 1}
-    else if (this.value === "Manhattan") {i = 2}
-    else if (this.value === "Bronx") {i = 3}
-    else if (this.value === "Staten Island") {i = 4}      
-
-    render(nyc.children[i])
-  });
 
   function position() {
     this.style("left", function(d) { return d.x + "px"; })
@@ -50,6 +41,18 @@
     .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
     .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
   }
+
+  d3.selectAll("input").on("change", function change() {
+    var i;
+    if (this.value === "All") {return render(nyc)}
+    else if (this.value === "Brooklyn") {i = 0}
+    else if (this.value === "Queens") {i = 1}
+    else if (this.value === "Manhattan") {i = 2}
+    else if (this.value === "Bronx") {i = 3}
+    else if (this.value === "Staten Island") {i = 4}      
+
+    render(nyc.children[i])
+  });
 //end rendering
 
 var json;
