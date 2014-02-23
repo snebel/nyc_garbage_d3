@@ -1,11 +1,10 @@
 //rendering
   var margin = {top: 40, right: 10, bottom: 10, left: 10},
-  width = 800 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom,
-  color = d3.scale.category20c();
+  width = 1000 - margin.left - margin.right,
+  height = 600 - margin.top - margin.bottom,
+  color = d3.scale.category20b();
 
   var div = d3.select("body").append("div")
-
     .style("position", "relative")
     .style("width", (width + margin.left + margin.right) + "px")
     .style("height", (height + margin.top + margin.bottom) + "px")
@@ -29,8 +28,10 @@
       .transition().duration(2000)
       .call(position)
       .style("background", function(d) { return d.children ? color(d.name) : null; })
-      
-      .text(function(d) { return d.children ? null : d.name; })
+      .text(function(d) { console.log(d) ; return d.children ? null : d.size + ' tons'; })
+      .style("color", function(d) {
+        return d.dx > 25 && d.dy > 25 ? "rgba(255,255,255,1)" : "rgba(255,255,255,0)"
+      })
     
     node.exit().remove();  
   }
@@ -66,9 +67,19 @@ function Borough(name) {
   this.children = []
 }
 
+function sumSizes(array){
+  var sum = 0;
+  for (var i=0; i<array.length; i++){
+    sum += parseInt(array[i].size)
+  }
+  return sum;
+}
+
 function District(name, trash_array){
+  console.log(trash_array)
   this.name = name;
   this.children = trash_array;
+  this.total = sumSizes(trash_array);
 }
 
 var borough_list = ["Manhattan", "Queens", "Brooklyn", "Staten Island", "Bronx"]
